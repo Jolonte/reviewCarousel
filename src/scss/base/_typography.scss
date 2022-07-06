@@ -3,3 +3,51 @@
 * {
   font-family: 'Inter', sans-serif;
 }
+
+h1 {
+  font-size: 1rem;
+  color: white;
+  @include tablet {
+    font-size: 2rem;
+  }
+  @include xx-desktop {
+    font-size: 4rem;
+  }
+  @include ux-desktop {
+    font-size: 6rem;
+  }
+}
+
+hr {
+  width: 3rem;
+  background-color: $blue2;
+  border: 0.2rem solid $blue2;
+  @include xx-desktop {
+    width: 15rem;
+    border: 0.3rem solid $blue2;
+  }
+  @include ux-desktop {
+    width: 30rem;
+  }
+}
+
+p {
+  text-align: justify;
+  color: $white;
+  @include tablet {
+    text-align: center;
+  }
+  @include xx-desktop {
+    font-size: 2rem;
+  }
+  @include ux-desktop {
+    font-size: 4rem;
+  }
+}
+
+i {
+  color: $blue2;
+  &:hover {
+    cursor: pointer;
+  }
+}

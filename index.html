@@ -5,9 +5,27 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Review Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   </head>
   <body>
-
+    <header>
+      <h1>Nossas avaliações:</h1>
+      <hr>
+    </header>
+    <main>
+      <div class="card">
+        <div class="card__img"></div>
+        <p class="card__title" id="name"></p>
+        <p class="card__title card__title--job" id="job"></p>
+        <div class="card__message">
+          <p id="message"></p>
+        </div>
+        <div class="card__btns">
+          <i class="ri-arrow-left-line ri-2x"></i>
+          <i class="ri-arrow-right-line ri-2x"></i>
+        </div>
+      </div>
+    </main>
     <script type="module" src="/src/ts/main.ts"></script>
   </body>
 </html>

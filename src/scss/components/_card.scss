@@ -1,0 +1,70 @@
+.card {
+  @include flex(auto, column, nowrap);
+  max-width: 30rem;
+  min-height: 90%;
+  max-height: 90%;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  gap: 1rem;
+  background-color: $blue3;
+
+  @include xx-desktop {
+    max-width: 60rem;
+    border-radius: 2rem;
+  }
+
+  @include ux-desktop {
+    max-width: 150rem;
+    border-radius: 5rem;
+  }
+
+  &__img {
+    min-width: 8rem;
+    max-width: 8rem;
+    min-height: 8rem;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include xx-desktop {
+      min-width: 15rem;
+      max-width: 15rem;
+      min-height: 15rem;
+    }
+
+    @include ux-desktop {
+      min-width: 30rem;
+      max-width: 30rem;
+      min-height: 30rem;
+    }
+  }
+
+  &__title {
+    &--job {
+      color: $red;
+    }
+  }
+
+  &__message {
+    @include flex(auto, row, wrap);
+    width: 100%;
+    justify-content: center;
+    max-height: 10rem;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+      display: none;
+  }
+  }
+
+  &__btns {
+    @include flex(auto, row, wrap);
+    width: 100%;
+    max-height: 2rem;
+    justify-content: space-evenly;
+  }
+}

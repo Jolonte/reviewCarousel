@@ -5,10 +5,14 @@
 
 // components
 @import 'components/button';
+@import 'components/card';
 
 // layout
 @import 'layout/main';
 @import 'layout/header';
+
+// theme
+@import 'themes/theme';
 
 // base
 @import 'base/typography';
