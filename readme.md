@@ -1,3 +1,7 @@
+<p align="center">
+  <img height="400em" src="public/cover.png"
+</p>
+
 ![GitHub language count](https://img.shields.io/github/languages/count/Jolonte/reviewCarousel)
 ![GitHub top language](https://img.shields.io/github/languages/top/Jolonte/reviewCarousel)
 ![GitHub license](https://img.shields.io/github/license/Jolonte/reviewCarousel)
